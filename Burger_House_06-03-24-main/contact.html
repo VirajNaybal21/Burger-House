@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Burger House</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            color: #1a1a1a;
+            margin-top: 30px;
+            font-size: 2.5rem;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 50px;
+            padding: 20px;
+        }
+
+        /* Contact Info Section */
+        .contact-info {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 800px;
+            margin-bottom: 40px;
+        }
+
+        .contact-info h2 {
+            text-align: center;
+            color: #ffcc00;
+            margin-bottom: 15px;
+            font-size: 2rem;
+        }
+
+        .info-item {
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+
+        .info-item i {
+            margin-right: 10px;
+            color: #ffcc00;
+        }
+
+        /* Contact Form Section */
+        .contact-form {
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 800px;
+            text-align: center;
+        }
+
+        .contact-form h2 {
+            color: #ffcc00;
+            margin-bottom: 25px;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+            box-sizing: border-box;
+        }
+
+        .form-input[type="submit"] {
+            background-color: #ffcc00;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+
+        .form-input[type="submit"]:hover {
+            background-color: #e6b800;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .contact-info, .contact-form {
+                width: 90%;
+            }
+
+            .form-input {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Contact Us</h1>
+
+    <div class="container">
+        <!-- Contact Information Section -->
+        <div class="contact-info">
+            <h2>Our Contact Information</h2>
+            <div class="info-item">
+                <i class="fas fa-map-marker-alt"></i> Address: @Kharadi Bypass, Pune, 410210
+            </div>
+            <div class="info-item">
+                <i class="fas fa-phone-alt"></i> Phone: +91 123 456 7890
+            </div>
+            <div class="info-item">
+                <i class="fas fa-envelope"></i> Email: <a href="mailto:burgerhouse@gmail.com">burgerhouse@gmail.com</a>
+            </div>
+        </div>
+
+        <!-- Contact Form Section -->
+        <div class="contact-form">
+            <h2>Get In Touch</h2>
+            <form action="#" method="post">
+                <input type="text" name="name" class="form-input" placeholder="Your Name" required>
+                <input type="email" name="email" class="form-input" placeholder="Your Email" required>
+                <textarea name="message" class="form-input" rows="5" placeholder="Your Message" required></textarea>
+                <input type="submit" value="Send Message" class="form-input">
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
