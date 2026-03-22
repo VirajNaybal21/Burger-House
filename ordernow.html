@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmation</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.order__grid {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.order__card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+}
+
+.order__card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.btn {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #d32f2f;
+}
+
+.order-details {
+    margin: 50px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    text-align: center;
+   
+}
+
+.order-item img {
+    width: 20%;
+    height: auto;
+    border-radius: 8px;
+}
+    </style>
+</head>
+<body>
+    <div class="order-details">
+        <h2>Conform Order</h2>
+        <div class="order-item">
+            <img src="assets/order-1.png" alt="order">
+            <h3>Chicken Burger</h3>
+            <p>
+                Sink your teeth into the timeless perfection of our Chicken Burger,
+                an experience that never goes out of style.
+            </p>
+            <p><strong>Price:</strong>₹149.00</p>
+            <button class="btn" id="placeOrderBtn">Place Order</button>
+        </div>
+
+        <h2>Conform Order</h2>
+        <div class="order-item">
+            <img src="assets/order-2.png" alt="order" >
+            <h3>Veggie Delight Burger</h3>
+            <p>
+                Embrace the vibrant flavors of our Veggie Delight Burger, a
+                celebration of freshness and wholesome goodness.
+            </p>
+            <p><strong>Price:</strong> ₹159.00</p>
+            <button class="btn" id="placeOrderBtn">Place Order</button>
+        </div>
+
+
+        <h2>Conform Order</h2>
+        <div class="order-item">
+            <img src="https://i.pinimg.com/474x/25/17/98/2517984ee7203b9bdda04cd4a78525fd.jpg" alt="order">
+            <h3>BBQ Bacon Burger</h3>
+            <p>
+                Indulge in a symphony of smoky, savory flavors with our BBQ Bacon
+                Burger, grilled and topped with crispy bacon.
+            </p>
+            <p><strong>Price:</strong> ₹179.00</p>
+            <button class="btn" id="placeOrderBtn">Place Order</button>
+        </div>
+
+
+    </div>
+
+    <script>
+        
+        document.getElementById('placeOrderBtn').addEventListener('click', function() {
+            alert("Your order has been placed!");
+            
+        });
+    </script>
+
+
+
+
+
+
+</body>
+</html>

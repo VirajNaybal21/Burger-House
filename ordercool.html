@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>order cool</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.order__grid {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.order__card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+}
+
+.order__card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.btn {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #d32f2f;
+}
+
+.order-details {
+    margin: 50px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    text-align: center;
+   
+}
+
+.order-item img {
+    width: 20%;
+    height: auto;
+    border-radius: 8px;
+}
+    </style>
+</head>
+<body>
+    <div class="order-details">
+        <h2>Conform Order</h2>
+        <div class="order-item">
+            <img src="https://i.pinimg.com/474x/4c/66/4f/4c664fe49ac60659088448ca69bf0eb3.jpg" alt="order">
+            <h3>Chocolate Cold Coffee</h3>
+            <p>
+                "Indulge in the Perfect Blend – Chocolate Cooled Coffee Delight!"
+            </p>
+            <p><strong>Price:</strong>₹249.00</p>
+            <button class="btn" id="placeOrderBtn">Place Order</button>
+        </div>
+
+        <h2>Conform Order</h2>
+        <div class="order-item">
+            <img src="https://i.pinimg.com/736x/bd/de/a0/bddea0e4dbe2f7a9cffa8cab5194cb74.jpg" alt="order" >
+            <h3>Cooled Coffee</h3>
+            <p>
+                "Chill, Sip, Refresh – Cold Coffee Bliss!"
+            </p>
+            <p><strong>Price:</strong> ₹159.00</p>
+            <button class="btn" id="placeOrderBtn">Place Order</button>
+        </div>
+
+
+        <h2>Conform Order</h2>
+        <div class="order-item">
+            <img src="https://i.pinimg.com/474x/8b/56/a4/8b56a4cad7575cc5a7b0808c18d79e38.jpg" alt="order">
+            <h3>Ice Cream Cold Coffee</h3>
+            <p>
+                "Cool Down with Creamy Bliss – Ice Cream Cold Coffee Magic!"
+            </p>
+            <p><strong>Price:</strong> ₹179.00</p>
+            <button class="btn" id="placeOrderBtn">Place Order</button>
+        </div>
+
+
+    </div>
+
+    <script>
+        
+        document.getElementById('placeOrderBtn').addEventListener('click', function() {
+            alert("Your order has been placed!");
+            
+        });
+    </script>
+
+</body>
+</html>

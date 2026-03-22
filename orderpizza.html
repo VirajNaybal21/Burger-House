@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordernow1</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.order__grid {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.order__card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+}
+
+.order__card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.btn {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #d32f2f;
+}
+
+.order-details {
+    margin: 50px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    text-align: center;
+   
+}
+
+.order-item img {
+    width: 20%;
+    height: auto;
+    border-radius: 8px;
+}
+    </style>
+</head>
+<body>
+    <div class="order-details">
+        <h2>Conform Order</h2>
+        <div class="order-item">
+            <img src="https://i.pinimg.com/736x/17/66/3a/17663a2409c28cca2670a9bcb8ff8970.jpg" alt="order">
+            <h3>Extra Cheese Pizza</h3>
+            <p>
+                "Cheese Your Way to Heaven!"
+            </p>
+            <p><strong>Price:</strong>₹249.00</p>
+            <button class="btn" id="placeOrderBtn">Place Order</button>
+        </div>
+
+        <h2>Conform Order</h2>
+        <div class="order-item">
+            <img src="https://i.pinimg.com/474x/f9/00/7f/f9007f73da46783cb255a1e621637f27.jpg" alt="order" >
+            <h3>Paneer Tikka Pizza</h3>
+            <p>
+                "Spice Up Your Slice with Paneer Tikka Delight!"
+            </p>
+            <p><strong>Price:</strong> ₹159.00</p>
+            <button class="btn" id="placeOrderBtn">Place Order</button>
+        </div>
+
+
+        <h2>Conform Order</h2>
+        <div class="order-item">
+            <img src="https://i.pinimg.com/736x/49/63/1e/49631eb0e8be75cb5c2caad19d959011.jpg" alt="order">
+            <h3>Chicken pizza</h3>
+            <p>
+                "Cluckin' Delicious, Pizzas That Sizzle!"
+            </p>
+            <p><strong>Price:</strong> ₹179.00</p>
+            <button class="btn" id="placeOrderBtn">Place Order</button>
+        </div>
+
+
+    </div>
+
+    <script>
+        
+        document.getElementById('placeOrderBtn').addEventListener('click', function() {
+            alert("Your order has been placed!");
+            
+        });
+        button.addEventListener('click', function() {
+  window.open('http://127.0.0.1:3000/orderpizza.html', '_blank');
+});
+document.addEventListener('DOMContentLoaded', function() {
+  // Bind event listeners to buttons
+  bindOrderNowBtn();
+});
+
+function bindOrderNowBtn() {
+  document.querySelectorAll('.orderNowBtn').forEach(button => {
+    button.addEventListener('click', function() {
+      window.location.href = 'http://127.0.0.1:3000/orderpizza.html';
+    });
+  });
+}
+    </script>
+
+
+
+
+
+
+</body>
+</html>
